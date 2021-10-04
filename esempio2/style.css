@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* approccio mobile first */
+img{
+    display: block;
+    margin: 5px auto;
+    border: 1px solid coral;
+}
+
+/* partendo dal piccolo al grande scrivere le media query in ordine crescente */
+
+@media screen and (min-width:568px){
+    img{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .container{
+        width: 450px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:780px){
+    .container{
+        width: 100%;
+    }
+}

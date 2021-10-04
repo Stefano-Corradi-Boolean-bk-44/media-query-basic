@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* situazione di default che si virifica > 480 e < 1441 */
+.area{
+    background-color: blue;
+    height: 200px;
+}
+
+@media screen and (max-width:480px){
+    .area{
+        background-color: green;
+    }
+}
+
+@media screen and (min-width:1441px) {
+    .area{
+        background-color: red;
+    }
+    
+}
+
+

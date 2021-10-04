@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* approccio mobile first (preferibile) */
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:479px){
+    .box{
+        float: left;
+        background-color: red;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+}
+
+
+
+/* approccio desktop first (meglio evitare questo approccio) */
+
+/*
+.box{
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-color: red;
+    margin-right: 20px;
+}
+
+@media (max-width:478px){
+    .box{
+        background-color: blue;
+        float: none;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}*/
